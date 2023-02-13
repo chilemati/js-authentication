@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body class="signup-body">
+
+    <div class="nav">
+        <ol>
+            <li><a href="#">LOGO</a></li>
+            <li class="hide"><a href="./index.html">Home</a></li>
+            <li class="hide"><a href="#">About</a></li>
+            <li class="hide"><a href="#">Contact</a></li>
+            <li><a href="#">&#9776;</a></li>
+        </ol>
+    </div>
+
+    <div class="signup">
+        <form>
+            <h1> SignUp Now </h1>
+            <label for="">First Name: <span class="fnerr"></span> </label> <input class="firstName" type="text" required>
+
+            <label for="">Last Name: <span class="lnerr"></span> </label> <input class="lastName" type="text" required>
+
+            <label for=""> Email:<span class="eerr"></span> </label> <input class="email" type="text" required>
+
+            <label for="">Phone Number: <span class="perr"></span> </label> <input class="phone" type="number" required>
+
+            <label for="">Password: <span class="pwerr"></span> </label> <input class="password" type="number" required>
+
+            <label for="" class="gender">Gender: </label> <label for="">Male</label> <input class="gender" type="radio" name="gender" value="male"> 
+            
+            <label for="">Female</label> <input class="gender" type="radio" name="gender" value="female"> <span class="gerr"></span>
+
+            <div class="submit">
+                <button>SignUp</button>
+            </div>
+        </form>
+
+    </div>
+    
+    <script src="./signup.js"></script>
+</body>
+</html>

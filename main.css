@@ -1,0 +1,264 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.nav {
+  background-color: rgba(9, 9, 246, 0.4);
+  padding: 0.5rem 1.5rem;
+}
+.nav ol {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  list-style-type: none;
+}
+.nav ol a {
+  text-decoration: none;
+  color: black;
+  font-size: 2.1vw;
+}
+@media (max-width: 500px) {
+  .nav ol .hide {
+    display: none;
+  }
+}
+
+.index-body {
+  background-image: url("./img/Desert.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+.index-body .container {
+  margin: 20% 0%;
+  padding: 1rem;
+}
+.index-body .welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.index-body .welcome h1 {
+  margin-bottom: 2rem;
+  color: black;
+  text-shadow: -2px 2px 0px rgba(248, 240, 240, 0.4);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 4.3vw;
+  text-align: center;
+}
+.index-body .welcome p {
+  color: white;
+  font-size: 3vw;
+  text-align: center;
+}
+.index-body .welcome .enter {
+  margin-top: 2rem;
+}
+.index-body .welcome .enter button {
+  padding: 0.6rem 1.5rem;
+  color: lightseagreen;
+  color: navy;
+  box-shadow: 1px 1px 0px black;
+  outline: none;
+  border: none;
+  border-radius: 12px;
+  font-size: 2.5vw;
+  font-weight: bold;
+}
+.index-body .welcome .enter button a {
+  text-decoration: none;
+  color: navy;
+}
+.index-body .welcome .enter .login {
+  margin-right: 3rem;
+}
+
+.signup-body {
+  background-color: gray;
+}
+.signup-body form {
+  margin: 5rem 20%;
+  padding: 3rem;
+  background-color: rgba(5, 5, 103, 0.25);
+  box-shadow: 2px 2px 0px rgba(5, 5, 103, 0.25);
+  border-radius: 20px;
+}
+.signup-body form h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: navy;
+  font-weight: bold;
+  margin: 2rem 0rem;
+}
+.signup-body form input[type=text], .signup-body form input[type=number] {
+  width: 100%;
+  margin-bottom: 1.5rem;
+  margin-top: 1rem;
+  height: 4rem;
+  border-radius: 15px;
+  outline: none;
+  border: none;
+  padding: 0.5rem 3rem;
+}
+.signup-body form input[type=text]:focus, .signup-body form input[type=number]:focus {
+  background-color: bisque;
+  font-size: 2rem;
+}
+.signup-body form label {
+  font-size: 1.5rem;
+  color: white;
+}
+.signup-body form label span {
+  color: red;
+  font-size: 2vw;
+  margin-left: 1rem;
+}
+.signup-body form .submit {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  padding: 3rem;
+}
+.signup-body form .submit button {
+  font-size: 2.5rem;
+  padding: 0.5rem 1rem;
+  color: green;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  border-radius: 50px 5px 50px 5px;
+}
+.signup-body form .submit button:hover {
+  border-radius: 12px;
+  background-color: rgba(5, 239, 5, 0.5);
+  color: black;
+  transition: border-radius 0.7s ease-in;
+}
+
+.login-body {
+  background-color: rgba(8, 242, 8, 0.3);
+}
+.login-body form {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgba(8, 242, 8, 0.4);
+  border-radius: 15px;
+  margin: 5rem 20%;
+  padding: 1rem;
+}
+.login-body form h1 {
+  text-align: center;
+  color: navy;
+  font-weight: bold;
+  font-size: 3rem;
+  margin: 3rem 0rem;
+}
+.login-body form input {
+  width: 50%;
+  margin: 2rem 0rem;
+  padding: 1rem;
+  border-radius: 24px 5px 24px 5px;
+  border: none;
+  outline: none;
+}
+.login-body form input:focus {
+  background-color: rgba(232, 72, 9, 0.3);
+  color: white;
+  font-size: 1.8rem;
+  padding: 0.5rem 3rem;
+}
+.login-body form .login button {
+  padding: 0.5rem 1.5rem;
+  color: navy;
+  border: none;
+  outline: none;
+  border-radius: 5px 50px 5px 50px;
+  box-shadow: 2px 2px 0px lime;
+  font-size: 2rem;
+  margin-right: 1.3rem;
+}
+.login-body form .login button a {
+  text-decoration: none;
+  color: navy;
+}
+.login-body form .login button:hover {
+  border-radius: 12px;
+  background-color: rgba(5, 239, 5, 0.5);
+  color: black;
+  transition: border-radius 0.7s ease-in;
+}
+.login-body form .err {
+  color: red;
+  font-size: 2vw;
+  margin-left: 1rem;
+}
+
+.dashboard-body {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.dashboard-body .notgreeting {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+.dashboard-body .notgreeting span {
+  background-color: blue;
+  border-radius: 14px;
+  font-size: 1.5rem;
+  color: white;
+  padding: 1rem;
+}
+.dashboard-body .greeting {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 1%;
+}
+.dashboard-body .greeting h2 {
+  background-color: navy;
+  color: green;
+  font-size: 2rem;
+  padding: 2rem;
+  border-radius: 20px 70px 70px 20px;
+  box-shadow: -3px -3px 0px white;
+}
+.dashboard-body .greeting h1, .dashboard-body .greeting h3 {
+  background-color: rgba(5, 5, 131, 0.5);
+  color: white;
+  font-size: 2rem;
+  padding: 2rem;
+  border-radius: 70px 20px 70px 20px;
+  margin-top: 2rem;
+  box-shadow: 3px 3px 0px white;
+  text-transform: capitalize;
+}
+.dashboard-body .greeting h4 {
+  background-color: blue;
+  color: white;
+  font-size: 1.8rem;
+  margin: 1rem 0rem;
+  padding: 0.5rem;
+  box-shadow: 2px -2px 0px white;
+  border-radius: 10px;
+}
+
+/*# sourceMappingURL=main.css.map */
